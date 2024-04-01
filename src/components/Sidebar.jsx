@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-
+import { CiGrid41 } from "react-icons/ci";
 
 const Sidebar = () => {
   const handleDragStart = (e, text) => {
@@ -10,18 +10,16 @@ const Sidebar = () => {
 
   return (
     <SidebarWrapper>
-      <h2>Sidebar</h2>
-      <ul>
-        <DraggableItem draggable onDragStart={(e) => handleDragStart(e, "label")}>
-          Label
+      <h2>Blocks</h2>
+       <DraggableItem draggable onDragStart={(e) => handleDragStart(e, "label")}>
+       <CiGrid41 /> Label
         </DraggableItem>
         <DraggableItem draggable onDragStart={(e) => handleDragStart(e, "input")}>
-          Input
+        <CiGrid41 /> Input
         </DraggableItem>
         <DraggableItem draggable onDragStart={(e) => handleDragStart(e, "button")}>
-          Button
+        <CiGrid41 /> Button
         </DraggableItem>
-      </ul>
     </SidebarWrapper>
   );
 }
@@ -34,10 +32,18 @@ const SidebarWrapper = styled.div`
   color: white;
 `;
 
-const DraggableItem = styled.li`
+const DraggableItem = styled.div`
   cursor: grab;
   margin-top: 20px;
-  
+  border: 1px solid white;
+  background-color: white;
+  color: gray;
+  border-radius: 2px;
+  padding: 5px 25px 5px 1px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 5px;
 `;
 
 

@@ -9,6 +9,7 @@ const DroppedItem = ({ style, draggable, onDragStart, onClick, isselected, child
       onDragStart={onDragStart}
       onClick={onClick}
       isselected={isselected}
+      
     >
       {children}
     </Item>

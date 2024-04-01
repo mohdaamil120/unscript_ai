@@ -16,24 +16,39 @@ const Page = () => {
     }
   }, []); 
 
+  // const handleDrop = (e) => {
+  //   e.preventDefault();
+  //   const data = e.dataTransfer.getData("text/plain");
+  //   const { offsetX, offsetY } = e.nativeEvent;
+  //   setCoordinates({ x: offsetX, y: offsetY });
+  //   const newItem = { id: Date.now(), type: data, x: offsetX, y: offsetY, fontSize: "initial", fontWeight: "normal" };
+  //   const existingItemIndex = droppedItems.findIndex(item => item.type === newItem.type);
+  //   if (existingItemIndex !== -1) {
+  //     const updatedItems = [...droppedItems];
+  //     updatedItems[existingItemIndex] = newItem;
+  //     setDroppedItems(updatedItems);
+  //     localStorage.setItem("modalData", JSON.stringify(updatedItems));
+  //   } else {
+  //     setDroppedItems(prevItems => [...prevItems, newItem]);
+  //     localStorage.setItem("modalData", JSON.stringify([...droppedItems, newItem]));
+  //     setModalIsOpen(true);
+  //   }
+  // };
+
+
   const handleDrop = (e) => {
     e.preventDefault();
     const data = e.dataTransfer.getData("text/plain");
     const { offsetX, offsetY } = e.nativeEvent;
     setCoordinates({ x: offsetX, y: offsetY });
     const newItem = { id: Date.now(), type: data, x: offsetX, y: offsetY, fontSize: "initial", fontWeight: "normal" };
-    const existingItemIndex = droppedItems.findIndex(item => item.type === newItem.type);
-    if (existingItemIndex !== -1) {
-      const updatedItems = [...droppedItems];
-      updatedItems[existingItemIndex] = newItem;
-      setDroppedItems(updatedItems);
-      localStorage.setItem("modalData", JSON.stringify(updatedItems));
-    } else {
-      setDroppedItems(prevItems => [...prevItems, newItem]);
-      localStorage.setItem("modalData", JSON.stringify([...droppedItems, newItem]));
-      setModalIsOpen(true);
-    }
+    setDroppedItems(prevItems => [...prevItems, newItem]);
+    localStorage.setItem("modalData", JSON.stringify([...droppedItems, newItem]));
+    setModalIsOpen(true);
   };
+  
+
+
 
   const handleItemClick = (id) => {
     setSelectedItemId(id);

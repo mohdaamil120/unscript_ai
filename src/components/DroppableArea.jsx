@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import DroppedItem from './DroppedItem';
 
-const DroppableArea = ({ onDrop, droppedItems, handleItemClick, handleItemDragStart, selectedItemId }) => {
+const DroppableArea = ({ onDrop, droppedItems, handleItemClick, handleItemDragStart, selectedItemId}) => {
   const handleDragOver = (e) => {
     e.preventDefault();
   };
@@ -19,7 +19,7 @@ const DroppableArea = ({ onDrop, droppedItems, handleItemClick, handleItemDragSt
           draggable="true"
           onDragStart={(e) => handleItemDragStart(e, item.type)}
           onClick={() => handleItemClick(item.id)} 
-          isselected={selectedItemId === item.id}      
+          isselected={selectedItemId === item.id}   
         >
           {item.type === "label" ? "This is a label" : item.type === "input" ? "This is an input" : "This is a button"}
         </DroppedItem>

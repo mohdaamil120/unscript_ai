@@ -49,11 +49,6 @@ const HomePage = () => {
 
   return (
     <Container>
-      {showSidebar ? (
-        <SidebarContainer>
-          <Sidebar />
-        </SidebarContainer>
-      ) : null}
       <MainContainer>
         <ToggleButton onClick={toggleSidebar}>
           {showSidebar ? <FaTimes /> : <FaBars />}
@@ -61,6 +56,12 @@ const HomePage = () => {
         <Page />
         <ExportButton onClick={exportPageConfiguration}>Export Configuration</ExportButton>
       </MainContainer>
+      {showSidebar ? (
+        <SidebarContainer>
+          <Sidebar />
+        </SidebarContainer>
+      ) : null}
+      
     </Container>
   );
 };
@@ -76,7 +77,7 @@ const Container = styled.div`
 `;
 
 const SidebarContainer = styled.div`
-  min-width: 12%;
+  min-width: 15%;
   background-color: #333;
 `;
 
