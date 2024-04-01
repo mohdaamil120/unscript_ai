@@ -24,12 +24,12 @@ List out the key features of your application.
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
 
-- React.js: A JavaScript library for building user interfaces.
-- Styled-components: A library for styling React components with CSS.
-- HTML5: The latest version of Hypertext Markup Language used for structuring web pages.
-- CSS3: The latest version of Cascading Style Sheets used for styling web pages.
-- JavaScript: A programming language that enables interactivity and dynamic content on web pages.
-- Local Storage: A web API used to store key-value pairs in a web browser.
+- React.js
+- Styled-components
+- HTML5
+- CSS3
+- JavaScript
+- Local Storage
 
 
 ## Installation & Getting started
