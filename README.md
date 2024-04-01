@@ -1,75 +1,47 @@
-# Deployed Link 
-
-https://unscript-ai.vercel.app/
-
-
 # Project Title
+Drag and Drop Functionality
 
 ## Introduction
-A brief introduction of your project goes here. You may want to cover the purpose of your project, its core functionality, and what problems it solves.
-
+This project demonstrates the implementation of drag and drop functionality in a web application using React.js. Users can drag elements from a sidebar and drop them onto a designated area on the page. Additionally, users can move existing elements within the dropped area to change their positions.
 ## Project Type
-Frontend | Backend | Fullstack
+Frontend 
 
 ## Deplolyed App
-Frontend: [https://deployed-site.whatever](https://unscript-ai.vercel.app/)
+Frontend: [React App](https://unscript-ai.vercel.app/)
 
 ## Directory Structure
-my-app/
-├─ backend/
-├─ frontend/
-│  ├─ ...
+src/
+├─ components/  
 
-## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
-
-## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 
 ## Features
 List out the key features of your application.
 
-- Feature 1
-- Feature 2
-- Feature 3
-
-## design decisions or assumptions
-List your design desissions & assumptions
-
-## Installation & Getting started
-Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
-
-```bash
-npm install my-project
-cd my-project
-npm start
-```
-
-## Usage
-Provide instructions and examples on how to use your project.
-
-```bash
-# Example
-```
-
-Include screenshots as necessary.
-
-## Credentials
-Provide user credentials for autheticated pages
-
-## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
-
-## API Endpoints
-In case of Backend Applications provide a list of your API endpoints, methods, brief descriptions, and examples of request/response.
-GET /api/items - retrieve all items
-POST /api/items - create a new item
+- Drag and drop elements from sidebar
+- Move existing elements within dropped area
 
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
 
-- Node.js
-- Express.js
-- MongoDB
-- Other libraries/modules
+- React.js: A JavaScript library for building user interfaces.
+- Styled-components: A library for styling React components with CSS.
+- HTML5: The latest version of Hypertext Markup Language used for structuring web pages.
+- CSS3: The latest version of Cascading Style Sheets used for styling web pages.
+- JavaScript: A programming language that enables interactivity and dynamic content on web pages.
+- Local Storage: A web API used to store key-value pairs in a web browser.
+
+
+## Installation & Getting started
+Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
+```
+Clone the repository: git clone https://github.com/yourusername/your-repo.git
+Navigate to the project directory: cd your-repo
+Install dependencies: npm install
+Start the frontend: npm start
+```
+
+```bash
+npm install my-project
+cd my-project
+npm start
