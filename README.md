@@ -11,7 +11,7 @@ Frontend: [React App](https://unscript-ai.vercel.app/)
 
 ## Directory Structure
 src/
-├─ components/  
+├─ components
 
 
 ## Features
